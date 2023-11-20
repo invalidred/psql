@@ -22,6 +22,24 @@ General
   ....
 ```
 
+## `\l` `\l+` - list of databases
+
+```
+postgres=# \l;
+
+   Name    |   Owner    | Encoding | Locale Provider | Collate | Ctype | ICU Locale | ICU Rules |   Access privileges   
+-----------+------------+----------+-----------------+---------+-------+------------+-----------+-----------------------
+ my-db     | my_db_admin| UTF8     | libc            | C       | C     |            |           | 
+ postgres  | postgres   | UTF8     | libc            | C       | C     |            |           | =Tc/postgres         +
+           |            |          |                 |         |       |            |           | postgres=CTc/postgres+
+           |            |          |                 |         |       |            |           | hris_ddl=c/postgres  +
+           |            |          |                 |         |       |            |           | hris_dml=c/postgres
+ template0 | postgres   | UTF8     | libc            | C       | C     |            |           | =c/postgres          +
+           |            |          |                 |         |       |            |           | postgres=CTc/postgres
+ template1 | postgres   | UTF8     | libc            | C       | C     |            |           | =c/postgres          +
+           |            |          |                 |         |       |            |           | postgres=CTc/postgres
+```
+
 ## `\c` - switch(connect) to a database
 
 ```
