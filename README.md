@@ -32,8 +32,8 @@ postgres=# \l;
  my-db     | my_db_admin| UTF8     | libc            | C       | C     |            |           | 
  postgres  | postgres   | UTF8     | libc            | C       | C     |            |           | =Tc/postgres         +
            |            |          |                 |         |       |            |           | postgres=CTc/postgres+
-           |            |          |                 |         |       |            |           | hris_ddl=c/postgres  +
-           |            |          |                 |         |       |            |           | hris_dml=c/postgres
+           |            |          |                 |         |       |            |           | my_db_ddl=c/postgres  +
+           |            |          |                 |         |       |            |           | my_db_dml=c/postgres
  template0 | postgres   | UTF8     | libc            | C       | C     |            |           | =c/postgres          +
            |            |          |                 |         |       |            |           | postgres=CTc/postgres
  template1 | postgres   | UTF8     | libc            | C       | C     |            |           | =c/postgres          +
