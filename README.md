@@ -60,7 +60,7 @@ postgres=# \dn
  public | pg_database_owner
 ```
 
-## `SET` - to switch to a schema
+## `SET` - to include a schema when querying
 
 ```
 SET search_path TO scma
